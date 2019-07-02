@@ -1,0 +1,7 @@
+language: bash
+sudo: false
+before_install:
+- sudo apt-get update
+- sudo apt-get install python3
+install: /bin/true
+script: hello.sh
