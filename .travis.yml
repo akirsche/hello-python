@@ -1,7 +1,13 @@
 language: bash
-sudo: false
+sudo: true
 before_install:
 - sudo apt-get update
 - sudo apt-get install python3
 install: /bin/true
 script: hello.sh
+notifications:
+  email:
+    recipients:
+    - amit@informatik.uni-leipzig.de
+    on_success: always
+    on_failure: always
